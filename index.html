@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Tips - Health</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Quick Tips - Health</h1>
+        <p>Quick exercises and tips for a healthy lifestyle</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#exercise-section">Quick Exercises</a></li>
+            <li><a href="#healthy-diet-section">Healthy Diet</a></li>
+            <li><a href="#sleep-section">Healthy Sleep</a></li>
+            <li><a href="#newsletter-section">Newsletter</a></li>
+            <li><a href="#new-section">New Section</a></li>
+        </ul>
+    </nav>
+
+    <section class="tips-section" id="exercise-section">
+        <h2 onclick="toggleSection('exercise')">Quick Exercises</h2>
+        <div class="content" id="exercise-content">
+            <p>1. <strong>Stretch Breaks:</strong> Take short stretching breaks every hour to improve flexibility.</p>
+            <p>2. <strong>20-Minute Walk:</strong> Daily short walks can improve physical fitness and overall well-being.</p>
+            <p>3. <strong>Breathing Exercises:</strong> Find a moment for deep breathing to relax your mind and body.</p>
+        </div>
+    </section>
+
+    <section class="tips-section" id="healthy-diet-section">
+        <h2 onclick="toggleSection('healthy-diet')">Healthy Diet</h2>
+        <div class="content" id="healthy-diet-content">
+            <p>1. <strong>Fruits and Vegetables:</strong> Consume a variety of fruits and vegetables to provide vitamins and fiber to your body.</p>
+            <p>2. <strong>Protein:</strong> Include sources of protein such as poultry, fish, eggs, or legumes.</p>
+            <p>3. <strong>Avoid Processed Foods:</strong> Limit the consumption of highly processed products with artificial additives.</p>
+        </div>
+    </section>
+
+    <section class="tips-section" id="sleep-section">
+        <h2 onclick="toggleSection('sleep')">Healthy Sleep</h2>
+        <div class="content" id="sleep-content">
+            <p>1. <strong>Create a Sleep Routine:</strong> Go to bed and wake up at consistent times to regulate your biological clock.</p>
+            <p>2. <strong>Comfortable Environment:</strong> Create a peaceful sleeping space with the right temperature and darkness.</p>
+            <p>3. <strong>Avoid Caffeine Before Bed:</strong> Limit caffeine intake in the evening to avoid disrupting sleep.</p>
+        </div>
+    </section>
+
+    <section id="newsletter-section">
+        <h2>Subscribe to my Newsletter</h2>
+        <p>Receive the latest information and updates!</p>
+
+        <form action="#" method="post" id="newsletter-form" onsubmit="return subscribe()">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <div id="confirmation-message"></div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="fab fa-facebook-f" title="Facebook">Facebook</a>
+            <a href="#" class="fab fa-twitter" title="Twitter">Twitter</a>
+            <a href="#" class="fab fa-instagram" title="Instagram">Instagram</a>
+            <a href="#" class="fab fa-linkedin-in" title="LinkedIn">LinkedIn</a>
+        </div>
+        <p>&copy; 2024 Quick Tips - Health <b>Dawid Wróbel</b></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
